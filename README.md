@@ -67,13 +67,13 @@
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
-    "@types/node": "^10.9.4",
+    "@types/node": "^10.10.1",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
     "prettier": "^1.4.0-beta",
     "tslint-config-airbnb": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
-    "tslint-plugin-prettier": "^1.3.0",
+    "tslint-plugin-prettier": "^2.0.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.1.0-dev.20180914"
   }
