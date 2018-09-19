@@ -1,13 +1,16 @@
 # Pocket Lint Cheat Sheet:
+##### *These package/linter dependency versions might not be the most recent, so remember to update your package.json!*
 
 ### non-typescript
 
 ###### package.json
+
 ```json
 {
   "dependencies": {
-    "babel-plugin-styled-components": "1.7.1",
-    "styled-components": "^3.4.9"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "1.1.5"
   },
   "devDependencies": {
     "eslint": "^5.6.0",
@@ -25,10 +28,10 @@
     "stylelint-processor-styled-components": "^1.3.2",
   }
 }
-
 ```
 
 ###### .eslintrc.json
+
 ```json
 {
   "root": true,
@@ -48,18 +51,21 @@
   }
 }
 ```
+
 ---
+
 ### typescript
 
 ###### package.json
+
 ```json
 {
   "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-scripts-ts": "2.17.0",
-    "styled-components": "^3.4.9"
   },
   "devDependencies": {
-    "@types/react-router-dom": "^4.3.1",
     "@types/jest": "^23.3.2",
     "@types/node": "^10.9.4",
     "@types/react": "^16.4.14",
@@ -75,6 +81,7 @@
 ```
 
 ###### tslint.json
+
 ```json
 {
   "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
@@ -96,6 +103,7 @@
 ```
 
 ###### tsconfig.json
+
 ```json
 {
   "compilerOptions": {
@@ -132,19 +140,21 @@
 }
 ```
 
-### additional
+### additional linter settings
 
 ###### .prettierrc
-```
+
+```json
 {
   "printWidth": 80,
   "semi": true,
   "singleQuote": true,
-  "trailingComma": "es5"
+  "trailingComma": "all"
 }
 ```
 
 ###### .stylelintrc.json
+
 ```json
 {
   "processors": ["stylelint-processor-styled-components"],
