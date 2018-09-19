@@ -72,6 +72,7 @@
     "@types/react-dom": "^16.0.7",
     "prettier": "^1.14.2",
     "stylelint": "^9.5.0",
+    "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.3.2",
@@ -112,13 +113,10 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "~/*": ["*"]
-    },
     "outDir": "build/dist",
     "module": "esnext",
     "target": "es5",
-    "lib": ["es6", "dom"],
+    "lib": ["es6", "dom", "esnext.asynciterable"],
     "sourceMap": true,
     "allowJs": true,
     "jsx": "react",
@@ -130,7 +128,14 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "plugins": [{
+      "name": "typescript-styled-plugin"
+    }],
+    "paths": {
+      "~/*": ["*"]
+    }
   },
   "exclude": [
     "node_modules",
