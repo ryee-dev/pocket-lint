@@ -67,20 +67,20 @@
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
-    "@types/node": "^10.10.1",
+    "@types/node": "^10.11.1",
     "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.7",
-    "prettier": "^1.14.2",
-    "stylelint": "^9.5.0",
+    "@types/react-dom": "^16.0.8",
+    "prettier": "^1.14.3",
+    "stylelint": "^9.6.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.3.2",
+    "stylelint-processor-styled-components": "^1.4.0",
     "tslint-config-airbnb": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-plugin-prettier": "^2.0.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.1.1"
   }
 }
 ```
