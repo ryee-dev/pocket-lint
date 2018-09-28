@@ -1,3 +1,5 @@
+[Back](https://github.com/ryee-dev/pocket-lint)
+
 # Typescript Config Settings
 
 ## package.json
