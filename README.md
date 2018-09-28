@@ -5,8 +5,8 @@
 ---
 
 ## Config Settings
-### [Non-Typescript](https://github.com/ryee-dev/pocket-lint/non-typescript)
-### [Typescript](https://github.com/ryee-dev/pocket-lint/non-typescript)
+### [Non-Typescript](https://github.com/ryee-dev/pocket-lint/tree/master/non-typescript)
+### [Typescript](https://github.com/ryee-dev/pocket-lint/tree/master/typescript)
 
 ---
 
