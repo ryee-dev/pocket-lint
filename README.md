@@ -56,7 +56,7 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 
 ```
 
-`yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
+`yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components tslib`
 
 ### tsconfig.json
 ```json
@@ -85,6 +85,57 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build", "scripts"]
+}
+```
+
+or
+
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "./", // enables project relative paths config
+    "paths": { // define paths mappings
+      "@src/*": ["src/*"] // will enable -> import { ... } from '@src/components'
+      // in webpack you need to add -> resolve: { alias: { '@src': PATH_TO_SRC } }
+    },
+    "outDir": "dist/", // target for compiled files
+    "allowSyntheticDefaultImports": true, // no errors with commonjs modules interop
+    "esModuleInterop": true,
+    "allowJs": true, // include js files
+    "checkJs": true, // typecheck js files
+    "declaration": false, // don't emit declarations
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true, // importing helper functions from tslib
+    "noEmitHelpers": true, // disable emitting inline helper functions
+    "jsx": "react", // process JSX
+    "lib": [
+      "dom",
+      "es2016",
+      "es2017.object"
+    ],
+    "target": "es5", // "es2015" for ES6+ engines
+    "module": "commonjs", // "es2015" for tree-shaking
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "pretty": true,
+    "removeComments": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.*"
+  ]
 }
 ```
 
@@ -268,4 +319,6 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 
 - https://github.com/azdanov/tslint-eslint-crats
 - https://github.com/styled-components/stylelint-processor-styled-components
+- https://github.com/sw-yx/react-typescript-cheatsheet
+- https://github.com/piotrwitek/react-redux-typescript-guide
 

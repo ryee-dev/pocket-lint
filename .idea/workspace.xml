@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24da7a9a-3a79-4761-8cbc-2b9561e81fef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/non-typescript/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/non-typescript/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/typescript/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/typescript/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,13 +60,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="601" />
+          <entry key="md" value="635" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="7" />
-          <entry key="Markdown" value="594" />
+          <entry key="Markdown" value="628" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,21 +86,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="178">
-                <caret line="10" column="115" lean-forward="true" selection-start-line="10" selection-start-column="115" selection-end-line="10" selection-end-column="115" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/typescript/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="151">
-                <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="46">
+                <caret line="139" column="3" lean-forward="true" selection-start-line="92" selection-end-line="139" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -109,11 +96,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/typescript/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="429">
+                <caret line="130" column="3" selection-start-line="130" selection-start-column="3" selection-end-line="130" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/non-typescript/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1420">
-                <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+              <first_editor relative-caret-position="160">
+                <caret line="4" column="184" lean-forward="true" selection-start-line="4" selection-start-column="184" selection-end-line="4" selection-end-column="184" />
               </first_editor>
               <second_editor />
             </state>
@@ -227,18 +226,18 @@
       <workItem from="1537315514040" duration="1075000" />
       <workItem from="1538432716648" duration="564000" />
       <workItem from="1538503113393" duration="3286000" />
-      <workItem from="1538523036990" duration="501000" />
+      <workItem from="1538523036990" duration="911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5426000" />
+    <option name="totallyTimeSpent" value="5836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119181946" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.119181946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -250,7 +249,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32958803" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32958803" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Bucklescript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -275,11 +274,21 @@
     <entry file="file://$PROJECT_DIR$/not-typescript/.eslintrc.json" />
     <entry file="file://$PROJECT_DIR$/libraries.md" />
     <entry file="file://$PROJECT_DIR$/typescript/.prettierrc" />
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/non-typescript/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="178">
-            <caret line="10" column="115" lean-forward="true" selection-start-line="10" selection-start-column="115" selection-end-line="10" selection-end-column="115" />
+          <first_editor relative-caret-position="160">
+            <caret line="4" column="184" lean-forward="true" selection-start-line="4" selection-start-column="184" selection-end-line="4" selection-end-column="184" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="139" column="3" lean-forward="true" selection-start-line="92" selection-end-line="139" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
@@ -288,18 +297,8 @@
     <entry file="file://$PROJECT_DIR$/typescript/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="151">
-            <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/non-typescript/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1420">
-            <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+          <first_editor relative-caret-position="429">
+            <caret line="130" column="3" selection-start-line="130" selection-start-column="3" selection-end-line="130" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
