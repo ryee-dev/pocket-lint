@@ -1,6 +1,6 @@
 # Pocket Lint Cheat Sheet:
 
-### Typescript Project Config
+### Non-Typescript Project Config
 
 ##### Dependencies
 
