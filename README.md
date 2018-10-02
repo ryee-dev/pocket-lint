@@ -93,30 +93,29 @@ or
 ```json
 {
   "compilerOptions": {
-    "baseUrl": "./", // enables project relative paths config
-    "paths": { // define paths mappings
-      "@src/*": ["src/*"] // will enable -> import { ... } from '@src/components'
-      // in webpack you need to add -> resolve: { alias: { '@src': PATH_TO_SRC } }
+    "baseUrl": "./",
+    "paths": { 
+      "@src/*": ["src/*"] 
     },
-    "outDir": "dist/", // target for compiled files
-    "allowSyntheticDefaultImports": true, // no errors with commonjs modules interop
+    "outDir": "dist/",
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "allowJs": true, // include js files
-    "checkJs": true, // typecheck js files
-    "declaration": false, // don't emit declarations
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true, // importing helper functions from tslib
-    "noEmitHelpers": true, // disable emitting inline helper functions
-    "jsx": "react", // process JSX
+    "importHelpers": true, 
+    "noEmitHelpers": true,
+    "jsx": "react", 
     "lib": [
       "dom",
       "es2016",
       "es2017.object"
     ],
-    "target": "es5", // "es2015" for ES6+ engines
-    "module": "commonjs", // "es2015" for tree-shaking
+    "target": "es5", 
+    "module": "commonjs", 
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
@@ -315,10 +314,12 @@ or
 }
 ```
 
-## Sources
+## A HUGE thanks to the following resources
 
 - https://github.com/azdanov/tslint-eslint-crats
 - https://github.com/styled-components/stylelint-processor-styled-components
 - https://github.com/sw-yx/react-typescript-cheatsheet
 - https://github.com/piotrwitek/react-redux-typescript-guide
-
+- https://piotrwitek.github.io/react-redux-typescript-guide/
+- https://levelup.gitconnected.com/ultimate-react-component-patterns-with-typescript-2-8-82990c516935
+- https://charleslbryant.gitbooks.io/hello-react-and-typescript/content/DefinePropsAndStateTypes.html
