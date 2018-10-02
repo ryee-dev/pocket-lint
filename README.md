@@ -12,8 +12,6 @@
 
 Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 
-
-
 ```json
 {
   "name": "tslint-eslint-crats",
@@ -59,6 +57,36 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 ```
 
 `yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
+
+### tsconfig.json
+```json
+{
+  "compilerOptions": {
+    "outDir": "build/lib",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "scripts"]
+}
+```
 
 ### tslint.json
 
@@ -235,3 +263,9 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
   ]
 }
 ```
+
+## Sources
+
+- https://github.com/azdanov/tslint-eslint-crats
+- https://github.com/styled-components/stylelint-processor-styled-components
+

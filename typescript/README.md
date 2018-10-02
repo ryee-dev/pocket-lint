@@ -1,13 +1,9 @@
-# Pocket Lint Cheat Sheet:
+## Typescript Project Config
 
-### Typescript Project Config
-
-##### package.json
+### package.json
 *(These package/linter dependency versions might not be the most recent, so remember to update your dependencies!)*
 
 Check which dependencies are out-of-date using: `yarn upgrade-interactive`
-
-
 
 ```json
 {
@@ -55,7 +51,37 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 
 `yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
 
-##### tslint.json
+### tsconfig.json
+```json
+{
+  "compilerOptions": {
+    "outDir": "build/lib",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "scripts"]
+}
+```
+
+### tslint.json
 
 ```json
 {
@@ -75,7 +101,7 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 }
 ```
 
-##### .eslintrc
+### .eslintrc
 
 ```json
 {
@@ -125,7 +151,7 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 }
 ```
 
-##### .prettierrc
+### .prettierrc
 
 ```json
 {
@@ -140,7 +166,7 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 }
 ```
 
-##### .stylelintrc
+### .stylelintrc
 
 ```json
 {
