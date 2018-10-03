@@ -56,7 +56,13 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 
 ```
 
+---
+
+### Dependencies to add
+
 `yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components tslib`
+
+---
 
 ### tsconfig.json
 ```json
@@ -138,6 +144,8 @@ or
 }
 ```
 
+---
+
 ### tslint.json
 
 ```json
@@ -157,6 +165,8 @@ or
   }
 }
 ```
+
+---
 
 ### .eslintrc
 
@@ -208,6 +218,8 @@ or
 }
 ```
 
+---
+
 ### .prettierrc
 
 ```json
@@ -223,6 +235,8 @@ or
 }
 ```
 
+---
+
 ### .stylelintrc
 
 ```json
@@ -237,12 +251,16 @@ or
 ```
 
 ---
+---
+
 
 ## Non-Typescript Project Config
 
 ### Dependencies
 
 `yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-unicorn prettier stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
+
+---
 
 ### .eslintrc
 
@@ -286,6 +304,8 @@ or
 }
 ```
 
+---
+
 ### .prettierrc
 
 ```json
@@ -301,6 +321,8 @@ or
 }
 ```
 
+---
+
 ### .stylelintrc
 
 ```json
@@ -313,6 +335,8 @@ or
   ]
 }
 ```
+
+---
 
 ## A HUGE thanks to the following resources
 

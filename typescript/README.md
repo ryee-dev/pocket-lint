@@ -1,4 +1,4 @@
-## Typescript Project Config
+# Typescript Project Config
 
 ### package.json
 *(These package/linter dependency versions might not be the most recent, so remember to update your dependencies!)*
@@ -49,7 +49,13 @@ Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 
 ```
 
+---
+
+### Dependencies to add
+
 `yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
+
+---
 
 ### tsconfig.json
 ```json
@@ -130,6 +136,8 @@ or
 }
 ```
 
+---
+
 ### tslint.json
 
 ```json
@@ -149,6 +157,8 @@ or
   }
 }
 ```
+
+---
 
 ### .eslintrc
 
@@ -200,6 +210,8 @@ or
 }
 ```
 
+---
+
 ### .prettierrc
 
 ```json
@@ -214,6 +226,8 @@ or
   "jsxBracketSameLine": false
 }
 ```
+
+---
 
 ### .stylelintrc
 

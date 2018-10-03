@@ -1,8 +1,11 @@
-## Non-Typescript Project Config
+# Non-Typescript Project Config
 
-### Dependencies
+### Dependencies to add
+
 
 `yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-unicorn prettier stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
+
+---
 
 ### .eslintrc
 
@@ -46,6 +49,8 @@
 }
 ```
 
+---
+
 ### .prettierrc
 
 ```json
@@ -60,6 +65,8 @@
   "jsxBracketSameLine": false
 }
 ```
+
+---
 
 ### .stylelintrc
 
