@@ -12,55 +12,11 @@
 
 Check which dependencies are out-of-date using: `yarn upgrade-interactive`
 
-```json
-{
-  "name": "tslint-eslint-crats",
-  "version": "0.1.0",
-  "private": true,
-  "license": "MIT",
-  "dependencies": {
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
-    "react-scripts-ts": "3.1.0"
-  },
-  "scripts": {
-    "build": "react-scripts-ts build",
-    "eject": "react-scripts-ts eject",
-    "start": "react-scripts-ts start",
-    "test": "react-scripts-ts test --env=jsdom"
-  },
-  "devDependencies": {
-    "@types/jest": "23.3.2",
-    "@types/node": "10.11.3",
-    "@types/react": "16.4.14",
-    "@types/react-dom": "16.0.8",
-    "eslint": "5.6.1",
-    "eslint-config-airbnb": "17.1.0",
-    "eslint-config-prettier": "3.1.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jest": "21.24.0",
-    "eslint-plugin-jsx-a11y": "6.1.1",
-    "eslint-plugin-prettier": "2.7.0",
-    "eslint-plugin-react": "7.11.1",
-    "eslint-plugin-typescript": "0.12.0",
-    "eslint-plugin-unicorn": "6.0.1",
-    "prettier": "1.14.3",
-    "tslint": "5.11.0",
-    "tslint-config-airbnb": "5.11.0",
-    "tslint-config-prettier": "1.15.0",
-    "tslint-plugin-prettier": "2.0.0",
-    "typescript": "3.1.1",
-    "typescript-eslint-parser": "19.0.2"
-  }
-}
-
-```
-
 ---
 
 ### Dependencies to add
 
-`yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components tslib`
+`yarn add -D eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components tslib`
 
 ---
 
