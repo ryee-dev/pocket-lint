@@ -1,6 +1,6 @@
 # Pocket Lint Cheat Sheet:
 
-# [Typescript](https://github.com/ryee-dev/pocket-lint/tree/master/typescript) | [Non-Typescript](https://github.com/ryee-dev/pocket-lint/tree/master/non-typescript)
+# [TS](https://github.com/ryee-dev/pocket-lint/tree/master/ts) | [JS](https://github.com/ryee-dev/pocket-lint/tree/master/js)
 
 ## A HUGE thanks to the following resources
 
