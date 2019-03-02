@@ -2,8 +2,7 @@
 
 ### Dependencies to add
 
-
-`yarn add -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-unicorn prettier stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
+`yarn add -D eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-unicorn prettier stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
 
 ---
 
@@ -60,7 +59,7 @@
   "useTabs": false,
   "semi": true,
   "singleQuote": true,
-  "trailingComma": "none",
+  "trailingComma": "es5",
   "bracketSpacing": true,
   "jsxBracketSameLine": false
 }
