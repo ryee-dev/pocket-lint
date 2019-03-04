@@ -2,7 +2,7 @@
 
 ### Dependencies to add
 
-`yarn add -D tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-typescript eslint-plugin-unicorn prettier typescript-eslint-parser stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
+`yarn add -D tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier eslint-config-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin @typescript-eslint/eslint-plugin-tslint prettier stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
 
 ---
 
@@ -11,100 +11,42 @@
 ```json
 {
   "compilerOptions": {
-    "outDir": "build/lib",
-    "module": "commonjs",
-    "target": "es5",
-    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "es6", "es2017", "esnext"],
     "sourceMap": true,
+    "outDir": "build/",
+    "moduleResolution": "node",
+    "declaration": false,
+    "composite": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "newLine": "LF",
+    
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    
     "allowJs": false,
     "jsx": "react",
-    "moduleResolution": "node",
     "rootDir": "src",
     "baseUrl": "src",
     "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "declaration": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    },
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", "scripts"]
-}
-```
-or
-
-```json
-{
-  "compilerOptions": {
-    "baseUrl": "./",
-    "paths": { 
-      "@src/*": ["src/*"] 
-    },
-    "outDir": "dist/",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "allowJs": true,
-    "checkJs": true,
-    "declaration": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true, 
-    "noEmitHelpers": true,
-    "jsx": "react", 
-    "lib": [
-      "dom",
-      "es2016",
-      "es2017.object"
-    ],
-    "target": "es5", 
-    "module": "commonjs", 
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "strict": true,
-    "pretty": true,
-    "removeComments": true,
-    "sourceMap": true
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "src/**/*.spec.*"
-  ]
-}
-```
-
----
-
-### tslint.json
-
-```json
-{
-  "rulesDirectory": ["tslint-plugin-prettier"],
-  "extends": [
-    "tslint:recommended",
-    "tslint-config-airbnb",
-    "tslint-react",
-    "tslint-config-prettier"
-  ],
-  "linterOptions": {
-    "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
-  },
-  "rules": {
-    "prettier": true
-  }
+  "exclude": ["node_modules", "build", "dist", "scripts"]
 }
 ```
 
@@ -115,26 +57,37 @@ or
 ```json
 {
   "extends": [
+    "plugin:@typescript-eslint/recommended",
     "airbnb",
     "prettier",
+    "prettier/@typescript-eslint",
     "prettier/react",
     "plugin:prettier/recommended",
     "plugin:jest/recommended",
     "plugin:unicorn/recommended"
   ],
-  "plugins": ["prettier", "jest", "unicorn"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
-    }
+      "jsx": false,
+    },
+    "project": "./tsconfig.json"
   },
+  "plugins": [
+    "@typescript-eslint",
+    "@typescript-eslint/tslint",
+    "prettier", 
+    "jest", 
+    "unicorn"
+  ],
   "env": {
+    "node": true,
     "es6": true,
     "browser": true,
     "jest": true
   },
   "rules": {
+    "@typescript-eslint/class-name-casing": "warn",
     "react/jsx-filename-extension": "off",
     "unicorn/filename-case": "off",
     "import/extensions": { "ts": "never", "tsx": "never" },
@@ -148,15 +101,6 @@ or
       }
     }
   },
-  "overrides": [
-    {
-      "files": ["**/*.ts", "**/*.tsx"],
-      "parser": "typescript-eslint-parser",
-      "rules": {
-        "no-undef": "off"
-      }
-    }
-  ]
 }
 ```
 
