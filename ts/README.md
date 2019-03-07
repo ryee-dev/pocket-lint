@@ -2,7 +2,7 @@
 
 ### Dependencies to add
 
-`yarn add -D tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier eslint-config-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin @typescript-eslint/eslint-plugin-tslint prettier stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
+`yarn add -D tslint tslint-config-airbnb tslint-config-prettier tslint-plugin-prettier eslint-config-prettier eslint-plugin-react-hooks @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier stylelint stylelint-config-prettier stylelint-config-recommended stylelint-config-styled-components stylelint-processor-styled-components`
 
 ---
 
@@ -31,10 +31,10 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "newLine": "LF",
-    
+
     "experimentalDecorators": true,
     "skipLibCheck": true,
-    
+
     "allowJs": false,
     "jsx": "react",
     "rootDir": "src",
@@ -43,7 +43,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "paths": {
       "*": ["src/*", "node_modules/*"]
-    },
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build", "dist", "scripts"]
@@ -69,15 +69,15 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": false,
+      "jsx": false
     },
     "project": "./tsconfig.json"
   },
   "plugins": [
     "@typescript-eslint",
     "@typescript-eslint/tslint",
-    "prettier", 
-    "jest", 
+    "prettier",
+    "jest",
     "unicorn"
   ],
   "env": {
@@ -100,7 +100,7 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
-  },
+  }
 }
 ```
 
