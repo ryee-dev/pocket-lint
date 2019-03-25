@@ -6,6 +6,8 @@
 
 ---
 
+## recommended configs
+
 ### .eslintrc
 
 ```json

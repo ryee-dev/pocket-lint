@@ -6,6 +6,8 @@
 
 ---
 
+## recommended configs
+
 ### tsconfig.json
 
 ```json
